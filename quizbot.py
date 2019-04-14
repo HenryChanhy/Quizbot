@@ -15,7 +15,18 @@ import time
 ANSWER_WAIT_TIME = 10
 NEXT_Q_WAIT_TIME = 3
 
-README_TEXT = ('Placeholder README text')
+README_TEXT = (
+    'This is Quizbot, a bot designed to mediate quizzes in your discord channel.'
+    '\n'
+    '\nCommands:'
+    '\n---------'
+    '\n!quiz - This help text.'
+    '\n!quiz Categories - This returns a list of possible categories to choose from.'
+    '\n!quiz <N> <Difficulty> <Category> - This is the main command to generate quiz questions.'
+    '\n\t- N: Number of questions - Must be between 1 and 10 (inclusive).'
+    '\n\t- Difficulty: Question difficulty - Must be one of "Easy", "Medium", "Hard", or "Any".'
+    '\n\t- Category: Question category - Must be a possible category (can be found by typing "!quiz Categories") or Any"'
+)
 
 # Make the categories more intuitive to the user
 def simplify_category(category_name):
